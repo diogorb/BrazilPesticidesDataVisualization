@@ -1,0 +1,817 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.1103.1137                               -->
+<workbook source-build='10.4.1 (10400.17.1103.1137)' source-platform='win' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='historico_2000_2014' inline='true' name='federated.0cl5m3300l4ck112ez77g0vhz5ma' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='historico_2000_2014' name='textscan.1ut9noq1xn9b1f15a1yx207fohce'>
+            <connection class='textscan' directory='//192.168.1.7/estudos/_PÓS UNIFACS/TCC - Artigo de Conclusão/DADOS/IBAMA_Historico_Comercialização_2012_a_2014' filename='historico_2012_2014.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Vendas_Acumuladas_2000_2015' name='excel-direct.1lxvs7j1i4jweu136sm9y10hs862'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='//192.168.1.7/estudos/_PÓS UNIFACS/TCC - Artigo de Conclusão/DADOS/Vendas_Acumuladas_2000_2015.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='intoxicacoes-2007-a-2014' name='textscan.1a70s5u0cdr9jw1fsmrsv0d2g1le'>
+            <connection class='textscan' directory='//192.168.1.7/estudos/_PÓS UNIFACS/TCC - Artigo de Conclusão/DADOS/SINAN_Intoxicações_2007_2014' filename='intoxicacoes-2007-a-2014.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <relation connection='textscan.1ut9noq1xn9b1f15a1yx207fohce' name='IBAMA_2012_2014' table='[historico_2000_2014#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=';'>
+              <column datatype='string' name='Região' ordinal='0' />
+              <column datatype='string' name='Estado' ordinal='1' />
+              <column datatype='integer' name='Ano' ordinal='2' />
+              <column datatype='real' name='quantidade' ordinal='3' />
+              <column datatype='real' name='participacao' ordinal='4' />
+              <column datatype='real' name='variacao' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1a70s5u0cdr9jw1fsmrsv0d2g1le' name='intoxicacoes-2007-a-2014.csv' table='[intoxicacoes-2007-a-2014#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=' '>
+              <column datatype='string' name='INTOXICAÇÃO' ordinal='0' />
+              <column datatype='string' name='EXÓGENA' ordinal='1' />
+              <column datatype='string' name='-' ordinal='2' />
+              <column datatype='string' name='Notificações' ordinal='3' />
+              <column datatype='string' name='registradas' ordinal='4' />
+              <column datatype='string' name='no' ordinal='5' />
+              <column datatype='integer' name='Sinan' ordinal='6' />
+              <column datatype='string' name='Net' ordinal='7' />
+              <column datatype='string' name=',,,,,,,,,,' ordinal='8' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Região</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Região]</local-name>
+            <parent-name>[IBAMA_2012_2014]</parent-name>
+            <remote-alias>Região</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Estado]</local-name>
+            <parent-name>[IBAMA_2012_2014]</parent-name>
+            <remote-alias>Estado</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ano]</local-name>
+            <parent-name>[IBAMA_2012_2014]</parent-name>
+            <remote-alias>Ano</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quantidade</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[quantidade]</local-name>
+            <parent-name>[IBAMA_2012_2014]</parent-name>
+            <remote-alias>quantidade</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participacao</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[participacao]</local-name>
+            <parent-name>[IBAMA_2012_2014]</parent-name>
+            <remote-alias>participacao</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variacao</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[variacao]</local-name>
+            <parent-name>[IBAMA_2012_2014]</parent-name>
+            <remote-alias>variacao</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IBAMA_2012_2014]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ano (Vendas2000!a!2015)]</local-name>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias>Ano</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MilhoesHectaresTransgenicos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MilhoesHectaresTransgenicos]</local-name>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias>MilhoesHectaresTransgenicos</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CrescimentoTransgenico</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CrescimentoTransgenico]</local-name>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias>CrescimentoTransgenico</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VendasToneladas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VendasToneladas]</local-name>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias>VendasToneladas</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CrescimentoToneladasAno</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CrescimentoToneladasAno]</local-name>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias>CrescimentoToneladasAno</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CrescimentoToneladasAcumulado</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CrescimentoToneladasAcumulado]</local-name>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias>CrescimentoToneladasAcumulado</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VendasDolares</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VendasDolares]</local-name>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias>VendasDolares</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CrescimentoDolaresAno</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CrescimentoDolaresAno]</local-name>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias>CrescimentoDolaresAno</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CrescimentoDolaresAcumulado</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CrescimentoDolaresAcumulado]</local-name>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias>CrescimentoDolaresAcumulado</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Vendas2000_a_2015]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I17:no:A1:I17:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UF Notificação</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UF Notificação]</local-name>
+            <parent-name>[intoxicacoes-2007-a-2014.csv]</parent-name>
+            <remote-alias>UF Notificação</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ano (intoxicacoes-2007-a-2014.csv)]</local-name>
+            <parent-name>[intoxicacoes-2007-a-2014.csv]</parent-name>
+            <remote-alias>Ano</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Casos Por Ano</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Casos Por Ano]</local-name>
+            <parent-name>[intoxicacoes-2007-a-2014.csv]</parent-name>
+            <remote-alias>Casos Por Ano</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[intoxicacoes-2007-a-2014.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Ano (Vendas2000!a!2015)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Ano (intoxicacoes-2007-a-2014.csv)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Ano]' role='dimension' type='quantitative' />
+      <column caption='Crescimento Dolares Acumulado' datatype='real' name='[CrescimentoDolaresAcumulado]' role='measure' type='quantitative' />
+      <column caption='Crescimento Dolares Ano' datatype='real' name='[CrescimentoDolaresAno]' role='dimension' type='quantitative' />
+      <column caption='Crescimento Toneladas Acumulado' datatype='real' name='[CrescimentoToneladasAcumulado]' role='measure' type='quantitative' />
+      <column caption='Crescimento Toneladas Ano' datatype='real' name='[CrescimentoToneladasAno]' role='dimension' type='quantitative' />
+      <column caption='Crescimento Transgenico' datatype='real' name='[CrescimentoTransgenico]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Estado]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Milhoes Hectares Transgenicos' datatype='real' name='[MilhoesHectaresTransgenicos]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Região]' role='dimension' type='nominal' />
+      <column caption='Vendas Dolares' datatype='real' name='[VendasDolares]' role='measure' type='quantitative' />
+      <column caption='Vendas Toneladas' datatype='integer' name='[VendasToneladas]' role='measure' type='quantitative' />
+      <column caption='Participacao' datatype='real' name='[participacao]' role='measure' type='quantitative' />
+      <column caption='Quantidade' datatype='real' name='[quantidade]' role='measure' type='quantitative' />
+      <column caption='Variacao' datatype='real' name='[variacao]' role='measure' type='quantitative' />
+      <column-instance column='[Estado]' derivation='None' name='[none:Estado:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Região]' derivation='None' name='[none:Região:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Inclusões (Estado,Região)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Estado:nk]' />
+          <groupfilter function='level-members' level='[none:Região:nk]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Região, Estado'>
+          <field>[Região]</field>
+          <field>[Estado]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' dim-percentage='0.447103' measure-ordering='alphabetic' measure-percentage='0.552897' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Planilha 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='historico_2000_2014' name='federated.0cl5m3300l4ck112ez77g0vhz5ma' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0cl5m3300l4ck112ez77g0vhz5ma'>
+            <column datatype='integer' name='[Ano]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Casos Por Ano]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Estado]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[Região]' role='dimension' type='nominal' />
+            <column-instance column='[Ano]' derivation='None' name='[none:Ano:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Estado]' derivation='None' name='[none:Estado:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Região]' derivation='None' name='[none:Região:nk]' pivot='key' type='nominal' />
+            <column caption='Quantidade' datatype='real' name='[quantidade]' role='measure' type='quantitative' />
+            <column-instance column='[Casos Por Ano]' derivation='Sum' name='[sum:Casos Por Ano:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[quantidade]' derivation='Sum' name='[sum:quantidade:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[Inclusões (Estado,Região)]'>
+            <groupfilter function='reorder-dimensionality' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='union'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Região:nk]' member='&quot;CENTRO-OESTE&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;DF&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;GO&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;MS&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;MT&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Região:nk]' member='&quot;NORDESTE&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;AL&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;BA&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;CE&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;MA&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;PB&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;PE&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;PI&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;RN&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;SE&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Região:nk]' member='&quot;NORTE&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;AC&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;AM&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;AP&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;PA&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;RO&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;RR&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;TO&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Região:nk]' member='&quot;SEM DEFINIÇÃO&quot;' />
+                  <groupfilter function='member' level='[none:Estado:nk]' member='&quot;SEM DEFINIÇÃO&quot;' />
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Região:nk]' member='&quot;SUDESTE&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;ES&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;MG&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;RJ&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;SP&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:Região:nk]' member='&quot;SUL&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;PR&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;RS&quot;' />
+                    <groupfilter function='member' level='[none:Estado:nk]' member='&quot;SC&quot;' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+              <order>
+                <hierarchy name='[none:Estado:nk]' />
+                <hierarchy name='[none:Região:nk]' />
+              </order>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Ano:qk]' included-values='in-range'>
+            <min>2012</min>
+            <max>2014</max>
+          </filter>
+          <slices>
+            <column>[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Ano:qk]</column>
+            <column>[federated.0cl5m3300l4ck112ez77g0vhz5ma].[Inclusões (Estado,Região)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[Longitude (generated)]' field-type='quantitative' max='377836.00175058283' min='-10196464.679733511' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[Latitude (generated)]' field-type='quantitative' max='1420218.011509086' min='-4993432.4795932416' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:quantidade:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d3dbe3</color>
+                <color>#b8c7d5</color>
+                <color>#9eb3c7</color>
+                <color>#87a1b9</color>
+                <color>#718fab</color>
+                <color>#5d7f9d</color>
+                <color>#4b6f8f</color>
+                <color>#3b6081</color>
+                <color>#2d5273</color>
+                <color>#214566</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:quantidade:qk]' />
+              <color column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:quantidade:qk]' />
+              <lod column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Região:nk]' />
+              <lod column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Estado:nk]' />
+              <text column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:Casos Por Ano:qk]' />
+              <geometry column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cl5m3300l4ck112ez77g0vhz5ma].[Latitude (generated)]</rows>
+        <cols>[federated.0cl5m3300l4ck112ez77g0vhz5ma].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Planilha 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='historico_2000_2014' name='federated.0cl5m3300l4ck112ez77g0vhz5ma' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cl5m3300l4ck112ez77g0vhz5ma'>
+            <column datatype='integer' name='[Ano]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Casos Por Ano]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Região]' role='dimension' type='nominal' />
+            <column caption='Vendas Dolares' datatype='real' name='[VendasDolares]' role='measure' type='quantitative' />
+            <column-instance column='[Ano]' derivation='None' name='[none:Ano:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Região]' derivation='None' name='[none:Região:nk]' pivot='key' type='nominal' />
+            <column caption='Participacao' datatype='real' name='[participacao]' role='measure' type='quantitative' />
+            <column-instance column='[Casos Por Ano]' derivation='Sum' name='[sum:Casos Por Ano:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VendasDolares]' derivation='Sum' name='[sum:VendasDolares:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[participacao]' derivation='Sum' name='[sum:participacao:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Região:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:Casos Por Ano:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:Casos Por Ano:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:VendasDolares:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:VendasDolares:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:participacao:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:participacao:qk]' z-order='3' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:Casos Por Ano:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Região:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:VendasDolares:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Região:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:participacao:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Região:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:Casos Por Ano:qk] + ([federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:VendasDolares:qk] + [federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:participacao:qk]))</rows>
+        <cols>[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Ano:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Painel 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' type='layout-basic' w='60200' x='800' y='1000'>
+              <zone h='98000' id='1' name='Planilha 1' w='60200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='382' h='98000' id='4' is-fixed='true' param='vert' type='layout-flow' w='38200' x='61000' y='1000'>
+              <zone h='8125' id='6' name='Planilha 1' pane-specification-id='0' param='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:quantidade:qk]' type='color' w='38200' x='61000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='7' name='Planilha 1' param='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Região:nk]' type='highlighter' w='38200' x='61000' y='9125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='83375' id='8' name='Planilha 2' w='38200' x='61000' y='15625'>
+                <layout-cache fixed-size-h='1744' fixed-size-w='359' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Planilha 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='229'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card param='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Ano:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[none:Região:nk]' type='highlighter' />
+            <card pane-specification-id='0' param='[federated.0cl5m3300l4ck112ez77g0vhz5ma].[sum:quantidade:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Planilha 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='215'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' name='Painel 1'>
+      <viewpoints>
+        <viewpoint name='Planilha 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Planilha 2' />
+      </viewpoints>
+      <active id='1' />
+    </window>
+  </windows>
+</workbook>

@@ -1,0 +1,2328 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.0915.2112                               -->
+<workbook original-version='10.4' source-build='10.4.0 (10400.17.0915.2112)' source-platform='win' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Vendas-2012-2014-Dolares e Toneladas' inline='true' name='federated.0xp6iy21jtnkoi1a4hdi30qeqkqr' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Vendas-2012-2014-Dolares e Toneladas' name='textscan.1ohqlga0ey44gi1d7ntmq1flpbgp'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='D:\Diogo\Google Drive\ESTUDOS\_PÓS UNIFACS\TCC - Artigo de Conclusão\Vendas-2012-2014-Dolares e Toneladas.csv' dataRefreshTime='' directory='D:/Diogo/Google Drive/ESTUDOS/_PÓS UNIFACS/TCC - Artigo de Conclusão' filename='C:/Users/Diogo/AppData/Local/Temp/TableauTemp/1ol45jg06ys6q21g3qium1770t92/Vendas-2012-2014-Dolares e Toneladas.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ohqlga0ey44gi1d7ntmq1flpbgp' name='Vendas-2012-2014-Dolares e Toneladas.csv' table='[Vendas-2012-2014-Dolares e Toneladas#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='pt_BR' separator=';'>
+            <column datatype='string' name='CULTURA' ordinal='0' />
+            <column datatype='integer' name='Toneladas em 2012' ordinal='1' />
+            <column datatype='integer' name='Toneladas em 2013' ordinal='2' />
+            <column datatype='integer' name='Toneladas em 2014' ordinal='3' />
+            <column datatype='integer' name='Dolares em 2012' ordinal='4' />
+            <column datatype='integer' name='Dolares em 2013' ordinal='5' />
+            <column datatype='integer' name='Dolares em 2014' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>CULTURA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CULTURA]</local-name>
+            <parent-name>[Vendas-2012-2014-Dolares e Toneladas.csv]</parent-name>
+            <remote-alias>CULTURA</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Toneladas em 2012</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Toneladas em 2012]</local-name>
+            <parent-name>[Vendas-2012-2014-Dolares e Toneladas.csv]</parent-name>
+            <remote-alias>Toneladas em 2012</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Toneladas em 2013</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Toneladas em 2013]</local-name>
+            <parent-name>[Vendas-2012-2014-Dolares e Toneladas.csv]</parent-name>
+            <remote-alias>Toneladas em 2013</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Toneladas em 2014</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Toneladas em 2014]</local-name>
+            <parent-name>[Vendas-2012-2014-Dolares e Toneladas.csv]</parent-name>
+            <remote-alias>Toneladas em 2014</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dolares em 2012</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dolares em 2012]</local-name>
+            <parent-name>[Vendas-2012-2014-Dolares e Toneladas.csv]</parent-name>
+            <remote-alias>Dolares em 2012</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dolares em 2013</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dolares em 2013]</local-name>
+            <parent-name>[Vendas-2012-2014-Dolares e Toneladas.csv]</parent-name>
+            <remote-alias>Dolares em 2013</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dolares em 2014</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dolares em 2014]</local-name>
+            <parent-name>[Vendas-2012-2014-Dolares e Toneladas.csv]</parent-name>
+            <remote-alias>Dolares em 2014</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Vendas-2012-2014-Dolares e Toneladas.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cultura' datatype='string' name='[CULTURA]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Dolares em 2012]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Dolares em 2013]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Dolares em 2014]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Toneladas em 2012]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Toneladas em 2013]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Toneladas em 2014]' role='measure' type='quantitative' />
+      <column-instance column='[CULTURA]' derivation='None' name='[none:CULTURA:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Dolares em 2012]' derivation='Sum' name='[sum:Dolares em 2012:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Dolares em 2013]' derivation='Sum' name='[sum:Dolares em 2013:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Dolares em 2014]' derivation='Sum' name='[sum:Dolares em 2014:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Toneladas em 2012]' derivation='Sum' name='[sum:Toneladas em 2012:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Toneladas em 2013]' derivation='Sum' name='[sum:Toneladas em 2013:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Toneladas em 2014]' derivation='Sum' name='[sum:Toneladas em 2014:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.421914' measure-ordering='alphabetic' measure-percentage='0.578086' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:CULTURA:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Citros&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Floricultura&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Reflorestamento&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Total&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cebola&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Milho Safra&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Batata Inglesa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Alho&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Trigo/ Aveia/Centeio/ Cevada&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Grãos Armazenados&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Milho Safrinha&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Amendoim&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Soja&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Uva&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Fruticultura (outras)&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Banana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Café&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Horticultura (outras)&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tomate Rasteiro&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Maçã&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fumo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Áreas não cultivada&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pastagem&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Feijão&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Melão / Melancia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cana-de-açúcar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Outras&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tomate Envarado&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Arroz Irrigado&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Algodão&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arroz Sequeiro&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Planilha 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Vendas-2012-2014-Dolares e Toneladas' name='federated.0xp6iy21jtnkoi1a4hdi30qeqkqr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xp6iy21jtnkoi1a4hdi30qeqkqr'>
+            <column caption='Cultura' datatype='string' name='[CULTURA]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Dolares em 2012]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Dolares em 2013]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Dolares em 2014]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Toneladas em 2012]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Toneladas em 2013]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Toneladas em 2014]' role='measure' type='quantitative' />
+            <column-instance column='[CULTURA]' derivation='None' name='[none:CULTURA:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dolares em 2012]' derivation='Sum' name='[sum:Dolares em 2012:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dolares em 2013]' derivation='Sum' name='[sum:Dolares em 2013:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dolares em 2014]' derivation='Sum' name='[sum:Dolares em 2014:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Toneladas em 2012]' derivation='Sum' name='[sum:Toneladas em 2012:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Toneladas em 2013]' derivation='Sum' name='[sum:Toneladas em 2013:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Toneladas em 2014]' derivation='Sum' name='[sum:Toneladas em 2014:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]'>
+            <groupfilter function='level-members' level='[none:CULTURA:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' direction='DESC' using='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]' />
+          <slices>
+            <column>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='subtitle' class='0' field='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]' scope='cols' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</rows>
+        <cols>([federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk] + ([federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk] + ([federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk] + ([federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk] + ([federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk] + [federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk])))))</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Total&quot;</value>
+                <value>9690748</value>
+                <value>11454284</value>
+                <value>12248546</value>
+                <value>823226</value>
+                <value>902409</value>
+                <value>914220</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Total&quot;</value>
+                <value>9690748</value>
+                <value>11454284</value>
+                <value>12248546</value>
+                <value>823226</value>
+                <value>902409</value>
+                <value>914220</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Total&quot;</value>
+                <value>9690748</value>
+                <value>11454284</value>
+                <value>12248546</value>
+                <value>823226</value>
+                <value>902409</value>
+                <value>914220</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Total&quot;</value>
+                <value>9690748</value>
+                <value>11454284</value>
+                <value>12248546</value>
+                <value>823226</value>
+                <value>902409</value>
+                <value>914220</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Total&quot;</value>
+                <value>9690748</value>
+                <value>11454284</value>
+                <value>12248546</value>
+                <value>823226</value>
+                <value>902409</value>
+                <value>914220</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Total&quot;</value>
+                <value>9690748</value>
+                <value>11454284</value>
+                <value>12248546</value>
+                <value>823226</value>
+                <value>902409</value>
+                <value>914220</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Soja&quot;</value>
+                <value>4566265</value>
+                <value>5866403</value>
+                <value>6804513</value>
+                <value>412620</value>
+                <value>475819</value>
+                <value>504016</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Café&quot;</value>
+                <value>339788</value>
+                <value>292926</value>
+                <value>309809</value>
+                <value>31419</value>
+                <value>21138</value>
+                <value>20682</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safrinha&quot;</value>
+                <value>435625</value>
+                <value>594559</value>
+                <value>645881</value>
+                <value>52440</value>
+                <value>62390</value>
+                <value>63184</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safra&quot;</value>
+                <value>479010</value>
+                <value>504538</value>
+                <value>431369</value>
+                <value>55234</value>
+                <value>49578</value>
+                <value>41651</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Algodão&quot;</value>
+                <value>900811</value>
+                <value>1040506</value>
+                <value>923779</value>
+                <value>55124</value>
+                <value>70362</value>
+                <value>60039</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cana-de-açúcar&quot;</value>
+                <value>1244039</value>
+                <value>1158865</value>
+                <value>1031050</value>
+                <value>74144</value>
+                <value>77474</value>
+                <value>68151</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Feijão&quot;</value>
+                <value>269340</value>
+                <value>290196</value>
+                <value>271322</value>
+                <value>16137</value>
+                <value>16612</value>
+                <value>16312</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Café&quot;</value>
+                <value>339788</value>
+                <value>292926</value>
+                <value>309809</value>
+                <value>31419</value>
+                <value>21138</value>
+                <value>20682</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safrinha&quot;</value>
+                <value>435625</value>
+                <value>594559</value>
+                <value>645881</value>
+                <value>52440</value>
+                <value>62390</value>
+                <value>63184</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safra&quot;</value>
+                <value>479010</value>
+                <value>504538</value>
+                <value>431369</value>
+                <value>55234</value>
+                <value>49578</value>
+                <value>41651</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Algodão&quot;</value>
+                <value>900811</value>
+                <value>1040506</value>
+                <value>923779</value>
+                <value>55124</value>
+                <value>70362</value>
+                <value>60039</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cana-de-açúcar&quot;</value>
+                <value>1244039</value>
+                <value>1158865</value>
+                <value>1031050</value>
+                <value>74144</value>
+                <value>77474</value>
+                <value>68151</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Soja&quot;</value>
+                <value>4566265</value>
+                <value>5866403</value>
+                <value>6804513</value>
+                <value>412620</value>
+                <value>475819</value>
+                <value>504016</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='19' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Soja&quot;</value>
+                <value>4566265</value>
+                <value>5866403</value>
+                <value>6804513</value>
+                <value>412620</value>
+                <value>475819</value>
+                <value>504016</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Soja&quot;</value>
+                <value>4566265</value>
+                <value>5866403</value>
+                <value>6804513</value>
+                <value>412620</value>
+                <value>475819</value>
+                <value>504016</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='21' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Soja&quot;</value>
+                <value>4566265</value>
+                <value>5866403</value>
+                <value>6804513</value>
+                <value>412620</value>
+                <value>475819</value>
+                <value>504016</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='22' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Soja&quot;</value>
+                <value>4566265</value>
+                <value>5866403</value>
+                <value>6804513</value>
+                <value>412620</value>
+                <value>475819</value>
+                <value>504016</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='23' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Feijão&quot;</value>
+                <value>269340</value>
+                <value>290196</value>
+                <value>271322</value>
+                <value>16137</value>
+                <value>16612</value>
+                <value>16312</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='24' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Café&quot;</value>
+                <value>339788</value>
+                <value>292926</value>
+                <value>309809</value>
+                <value>31419</value>
+                <value>21138</value>
+                <value>20682</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='25' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safrinha&quot;</value>
+                <value>435625</value>
+                <value>594559</value>
+                <value>645881</value>
+                <value>52440</value>
+                <value>62390</value>
+                <value>63184</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='26' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safra&quot;</value>
+                <value>479010</value>
+                <value>504538</value>
+                <value>431369</value>
+                <value>55234</value>
+                <value>49578</value>
+                <value>41651</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='27' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Algodão&quot;</value>
+                <value>900811</value>
+                <value>1040506</value>
+                <value>923779</value>
+                <value>55124</value>
+                <value>70362</value>
+                <value>60039</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='28' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cana-de-açúcar&quot;</value>
+                <value>1244039</value>
+                <value>1158865</value>
+                <value>1031050</value>
+                <value>74144</value>
+                <value>77474</value>
+                <value>68151</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='29' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Feijão&quot;</value>
+                <value>269340</value>
+                <value>290196</value>
+                <value>271322</value>
+                <value>16137</value>
+                <value>16612</value>
+                <value>16312</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='30' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Café&quot;</value>
+                <value>339788</value>
+                <value>292926</value>
+                <value>309809</value>
+                <value>31419</value>
+                <value>21138</value>
+                <value>20682</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='31' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safrinha&quot;</value>
+                <value>435625</value>
+                <value>594559</value>
+                <value>645881</value>
+                <value>52440</value>
+                <value>62390</value>
+                <value>63184</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='32' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safra&quot;</value>
+                <value>479010</value>
+                <value>504538</value>
+                <value>431369</value>
+                <value>55234</value>
+                <value>49578</value>
+                <value>41651</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='33' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Algodão&quot;</value>
+                <value>900811</value>
+                <value>1040506</value>
+                <value>923779</value>
+                <value>55124</value>
+                <value>70362</value>
+                <value>60039</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='34' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cana-de-açúcar&quot;</value>
+                <value>1244039</value>
+                <value>1158865</value>
+                <value>1031050</value>
+                <value>74144</value>
+                <value>77474</value>
+                <value>68151</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='35' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Feijão&quot;</value>
+                <value>269340</value>
+                <value>290196</value>
+                <value>271322</value>
+                <value>16137</value>
+                <value>16612</value>
+                <value>16312</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='36' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Café&quot;</value>
+                <value>339788</value>
+                <value>292926</value>
+                <value>309809</value>
+                <value>31419</value>
+                <value>21138</value>
+                <value>20682</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='37' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safrinha&quot;</value>
+                <value>435625</value>
+                <value>594559</value>
+                <value>645881</value>
+                <value>52440</value>
+                <value>62390</value>
+                <value>63184</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='38' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safra&quot;</value>
+                <value>479010</value>
+                <value>504538</value>
+                <value>431369</value>
+                <value>55234</value>
+                <value>49578</value>
+                <value>41651</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='39' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Algodão&quot;</value>
+                <value>900811</value>
+                <value>1040506</value>
+                <value>923779</value>
+                <value>55124</value>
+                <value>70362</value>
+                <value>60039</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='40' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cana-de-açúcar&quot;</value>
+                <value>1244039</value>
+                <value>1158865</value>
+                <value>1031050</value>
+                <value>74144</value>
+                <value>77474</value>
+                <value>68151</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='41' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Feijão&quot;</value>
+                <value>269340</value>
+                <value>290196</value>
+                <value>271322</value>
+                <value>16137</value>
+                <value>16612</value>
+                <value>16312</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='42' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Feijão&quot;</value>
+                <value>269340</value>
+                <value>290196</value>
+                <value>271322</value>
+                <value>16137</value>
+                <value>16612</value>
+                <value>16312</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='43' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Café&quot;</value>
+                <value>339788</value>
+                <value>292926</value>
+                <value>309809</value>
+                <value>31419</value>
+                <value>21138</value>
+                <value>20682</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='44' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safrinha&quot;</value>
+                <value>435625</value>
+                <value>594559</value>
+                <value>645881</value>
+                <value>52440</value>
+                <value>62390</value>
+                <value>63184</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='45' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Milho Safra&quot;</value>
+                <value>479010</value>
+                <value>504538</value>
+                <value>431369</value>
+                <value>55234</value>
+                <value>49578</value>
+                <value>41651</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='46' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Algodão&quot;</value>
+                <value>900811</value>
+                <value>1040506</value>
+                <value>923779</value>
+                <value>55124</value>
+                <value>70362</value>
+                <value>60039</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='47' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2014:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2012:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2013:qk]</field>
+                  <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Toneladas em 2014:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Cana-de-açúcar&quot;</value>
+                <value>1244039</value>
+                <value>1158865</value>
+                <value>1031050</value>
+                <value>74144</value>
+                <value>77474</value>
+                <value>68151</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Planilha 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card param='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' size='119' type='filter' />
+            <card pane-specification-id='1' param='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' size='580' type='color' />
+            <card param='[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]' size='27' type='highlighter' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[sum:Dolares em 2012:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[:Measure Names]</field>
+            <field>[federated.0xp6iy21jtnkoi1a4hdi30qeqkqr].[none:CULTURA:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Planilha 1' width='192'>
+      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
+      bO89AwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
